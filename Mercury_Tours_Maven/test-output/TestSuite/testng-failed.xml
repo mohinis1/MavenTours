@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestSuite]" parallel="tests">
+  <test thread-count="2" name="IETest(failed)" parallel="tests">
+    <parameter name="upass" value="dixit"/>
+    <parameter name="uname" value="dixit"/>
+    <parameter name="browser" value="IE"/>
+    <parameter name="url" value="http://newtours.demoaut.com/mercurysignon.php?"/>
+    <classes>
+      <class name="com.mercury.tours.CrossBrowser_Example">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="setup"/>
+          <include name="Flight_Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.mercury.tours.CrossBrowser_Example -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+  <test thread-count="2" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="upass" value="testing"/>
+    <parameter name="uname" value="testing"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://newtours.demoaut.com/mercurysignon.php?"/>
+    <classes>
+      <class name="com.mercury.tours.CrossBrowser_Example">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="setup"/>
+          <include name="Flight_Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.mercury.tours.CrossBrowser_Example -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" parallel="false" thread-count="1">
+  <test name="Test1">
+  <parameter name="url" value="http://newtours.demoaut.com/mercurysignon.php?"/>
+  <parameter name="uname" value="testing"/>
+  <parameter name="upass" value="testing"/>
+    <classes>
+      <class name="com.mercury.tours.Parameter_Sign_On"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+  <parameter name="url" value="http://newtours.demoaut.com/mercurysignon.php?"/>
+  <parameter name="uname" value="dixit"/>
+  <parameter name="upass" value="dixit"/>
+    <classes>
+      <class name="com.mercury.tours.Parameter_Sign_On"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test3">
+  <parameter name="url" value="http://newtours.demoaut.com/mercurysignon.php?"/>
+  <parameter name="uname" value="selenium"/>
+  <parameter name="upass" value="selenium"/>
+    <classes>
+      <class name="com.mercury.tours.Parameter_Sign_On"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
